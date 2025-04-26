@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
+MONGO_URI='mongodb+srv://saishyam:<sai@2345>@village-problems.5tuhmvp.mongodb.net/?retryWrites=true&w=majority&appName=village-problems'
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
